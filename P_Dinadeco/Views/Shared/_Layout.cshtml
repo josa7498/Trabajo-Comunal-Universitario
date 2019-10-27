@@ -1,68 +1,74 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="~/Scripts/smoothscrolling.js"></script>
+    <script src="~/Scripts/showhide.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" >
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
+          <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#59bdc9">
 
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#">
-                        <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-                    </a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Asociaciones </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Proyectos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Distribución</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-cente" style="color:black">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Reporte</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand my-2 mr-sm-5" href="#">
+                            <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+                        </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mantenimiento</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link  my-2 mr-sm-5" href="~/Views/Asociado/Asociacion.cshtml">Asociaciones </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Usuarios</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle my-2 mr-sm-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Proyectos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+                    <li class="nav-item">
+                        <a class="nav-link my-2 mr-sm-5" href="#">Distribución</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link my-2 mr-sm-5" href="#">Reporte</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link my-2 mr-sm-5" href="#">Mantenimiento</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link my-2 mr-sm-5" href="#">Usuarios</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        @RenderBody()
 </body>
 </html>
