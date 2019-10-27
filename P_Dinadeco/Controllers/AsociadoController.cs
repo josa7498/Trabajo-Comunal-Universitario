@@ -9,7 +9,7 @@ namespace P_Dinadeco.Controllers
     public class AsociadoController : Controller
     {
         // GET: Asociado
-        public ActionResult Index()
+        public ActionResult Asociacion()
         {
             return View();
         }
