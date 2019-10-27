@@ -9,7 +9,7 @@ namespace P_Dinadeco.Controllers
     public class LiquidarController : Controller
     {
         // GET: Liquidar
-        public ActionResult Index()
+        public ActionResult Liquidar()
         {
             return View();
         }

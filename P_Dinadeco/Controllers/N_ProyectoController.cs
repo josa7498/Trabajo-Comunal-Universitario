@@ -9,7 +9,7 @@ namespace P_Dinadeco.Controllers
     public class N_ProyectoController : Controller
     {
         // GET: N_Proyecto
-        public ActionResult Index()
+        public ActionResult Nuevo_Proyecto()
         {
             return View();
         }
