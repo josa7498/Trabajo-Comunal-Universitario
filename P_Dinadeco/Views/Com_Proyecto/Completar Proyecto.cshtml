@@ -4,11 +4,127 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title></title>
 </head>
-<body>
-    <div>
-    
-    </div>
+<body style="width:100%">
+    <br />
+    <div class="jumbotron" style="border: 1px inset #66c2c2; margin: auto 10% auto 10%; background-color:transparent">
+        <div class="container">
+            <h1> <center>Completar</center></h1>
+
+            <br /> <br />
+
+            <div style="margin-left: 30%" class=" col-sm-5">
+                <div class="input-group mb-3 col-sm-13">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" style="width:100px " for="inputGroupSelect01">Codigo</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">Activo</option>
+                        <option value="2">Inactivo</option>
+                        <option value="3">Pendinte</option>
+                    </select>
+                </div>
+            </div>
+            <button style="width:10%; margin-left: 45%" type="button" class="btn btn-light">Buscar</button>
+
+            <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+
+                <div class="col-sm-6">
+                    <div class="input-group mb-3 col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:165px" id="inputGroup-sizing-default">Numero de Registro</span>
+
+                        </div>
+                        <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    </div>
+
+                    <div class="input-group mb-3 col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:100px" id="inputGroup-sizing-default">Cedula</span>
+
+                        </div>
+                        <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3 col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:100px" id="inputGroup-sizing-default">Tipo</span>
+
+                        </div>
+                        <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+
+                    <div class="input-group mb-3 col-sm-14">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:200px" id="inputGroup-sizing-default">Nombre de la Asociacion</span>
+                        </div>
+                        <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+
+                    <div class="input-group mb-3 col-sm-14">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Estado</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">Activo</option>
+                            <option value="2">Inactivo</option>
+                            <option value="3">Pendinte</option>
+                        </select>
+                    </div>
+                </div>
+                <button style="width:30%; margin-left: 32%" type="button" class="btn btn-light">Ver detalle del Proyecto</button>
+            </div>
+        </div>
+
+        <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+
+            <div class="input-group mb-3 col-sm-4">
+                <div style="padding-bottom:5%" class="input-group-prepend">
+                    <label class="input-group-text" style="width:150px" for="inputGroupSelect01">Fecha de Completado</label>
+                </div>
+                <input type="text" id="fecha" name="fecha" />
+            </div>
+
+            <div class="col-sm-9">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:230px" id="inputGroup-sizing-default">Observaciones</span>
+
+                    </div>
+                    <div class="form-group" style="padding-top: 2%">
+                        <textarea class="form-control" rows="5" cols="100" id="comment"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button style="width: 10% " type="button" class="btn btn-light">Atras</button>
+        <button style="width:10%" type="button" class="btn btn-light">Rechazar</button>
+        <button style="width:30%" type="button" class="btn btn-light">Completar y Crear expediente</button>
+
+
+
+
+
+
+
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $('#fecha').datepicker();
+            });
+        </script>
 </body>
 </html>
