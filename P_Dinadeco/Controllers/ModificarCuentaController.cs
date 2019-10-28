@@ -9,7 +9,7 @@ namespace P_Dinadeco.Controllers
     public class ModificarCuentaController : Controller
     {
         // GET: ModificarCuenta
-        public ActionResult M_Cuenta()
+        public ActionResult Index()
         {
             return View();
         }

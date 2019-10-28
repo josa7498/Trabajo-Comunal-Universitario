@@ -9,7 +9,7 @@ namespace P_Dinadeco.Controllers
     public class DepositarController : Controller
     {
         // GET: Depositar
-        public ActionResult Depositar()
+        public ActionResult Index()
         {
             return View();
         }

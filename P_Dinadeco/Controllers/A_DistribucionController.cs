@@ -9,7 +9,7 @@ namespace P_Dinadeco.Controllers
     public class A_DistribucionController : Controller
     {
         // GET: A_Distribucion
-        public ActionResult Aprobar_Distr()
+        public ActionResult Index()
         {
             return View();
         }
