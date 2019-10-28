@@ -263,13 +263,13 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\N_Proyecto\Nuevo_Proyecto.cshtml" />
     <Content Include="Views\Liquidar\Liquidar.cshtml" />
+    <Content Include="Views\ModificarCuenta\M_Cuenta.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\A_Distribucion\" />
     <Folder Include="Views\Depositar\" />
-    <Folder Include="Views\ModificarCuenta\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
