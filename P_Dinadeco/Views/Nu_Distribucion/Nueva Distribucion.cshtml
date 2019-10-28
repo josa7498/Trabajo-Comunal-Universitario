@@ -1,0 +1,138 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+    <title></title>
+</head>
+<body style="width:100%">
+    <br />
+    <div class="jumbotron" style="border: 1px inset #66c2c2; margin: auto 10% auto 10%; background-color:transparent">
+        <div class="container">
+            <h1> <center> Nueva Distribucion </center></h1>
+
+            <br /> <br />
+
+            <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+
+                <div class="col-sm-6">
+                    <div class="input-group mb-3 col-sm-11">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:100px" id="inputGroup-sizing-default">Nombre</span>
+
+                        </div>
+                        <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    </div>
+
+
+                    <div class="input-group mb-3 col-sm-11">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Estado</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">Activo</option>
+                            <option value="2">Inactivo</option>
+                            <option value="3">Pendinte</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group mb-3 col-sm-4">
+                        <div style="padding-bottom:5%" class="input-group-prepend">
+                            <label class="input-group-text" style="width:150px" for="inputGroupSelect01">Fecha de Ingreso</label>
+                        </div>
+                        <input type="text" id="fecha" name="fecha" />
+                    </div>
+
+                    <div class="input-group mb-3 col-sm-4">
+                        <div style="padding-bottom:5%" class="input-group-prepend">
+                            <label class="input-group-text" style="width:250px" for="inputGroupSelect01">Fecha de Corte de Distribucion</label>
+                        </div>
+                        <input type="text" id="fecha1" name="fecha1" />
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="input-group mb-3 col-sm-12">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:250px" id="inputGroup-sizing-default">Resolucion de Periodo de Gracia</span>
+                        </div>
+                        <input type="text" class="form-control" style="width:50px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+
+                    <div class="input-group mb-3 col-sm-12">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:250px" id="inputGroup-sizing-default">Acuerdo de Periodo de Gracia</span>
+                        </div>
+                        <input type="text" class="form-control" style="width:50px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3 col-sm-4">
+                        <div style="padding-bottom:5%" class="input-group-prepend">
+                            <label class="input-group-text" style="width:255px" for="inputGroupSelect01">Fecha Limite de periodo de Gracia</label>
+                        </div>
+                        <input type="text" id="fecha2" name="fecha2" />
+                    </div>
+
+                    <div class="input-group mb-3 col-sm-4">
+                        <div style="padding-bottom:5%" class="input-group-prepend">
+                            <label class="input-group-text" style="width:160px" for="inputGroupSelect01">Fecha de Inspeccion</label>
+                        </div>
+                        <input type="text" id="fecha3" name="fecha3" />
+                    </div>
+                </div>
+
+                <div class=" col-sm-9">
+                    <div style="padding-left: 2%" class="input-group-prepend">
+                        <label style="width: 71%" class="checkbox-inline" id="inputGroup-sizing-default"><input type="checkbox" value="">Distribucion del 2%</label>
+                        <label class="checkbox-inline" id="inputGroup-sizing-default"><input type="checkbox" value="">Distribucion Cemento
+                    </div>
+                </div>
+
+            </div>
+
+            <button style="width: 10% " type="button" class="btn btn-light">Atras</button>
+            <button style="width:10%" type="button" class="btn btn-light">Guardar</button>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#fecha').datepicker();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#fecha1').datepicker();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#fecha2').datepicker();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#fecha3').datepicker();
+        });
+    </script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+</body>
+</html>
