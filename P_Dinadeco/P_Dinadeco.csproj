@@ -263,6 +263,10 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\N_Proyecto\Nuevo_Proyecto.cshtml" />
     <Content Include="Views\Liquidar\Liquidar.cshtml" />
+    <Content Include="Views\Nu_Distribucion\Nueva Distribucion.cshtml" />
+    <Content Include="Views\E_Distribuciones\Excluir Dsitribucion.cshtml" />
+    <Content Include="Views\I_Distribuciones\Incluir Distribucion.cshtml" />
+    <Content Include="Views\Com_Proyecto\Completar Proyecto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
