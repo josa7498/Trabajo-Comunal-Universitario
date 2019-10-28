@@ -9,9 +9,75 @@
     <meta name="viewport" content="width=device-width" />
     <title></title>
 </head>
-<body>
-    <div>
-    
-    </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body style="width:100%">
+    <br />
+    <div class="jumbotron" style="border: 1px inset #66c2c2; margin: auto 10% auto 10%; background-color:transparent">
+        <div class="container">
+            <h1> <center>Modelado</center></h1>
+
+            <br /> <br />
+
+            <div style="margin-left: 30%" class=" col-sm-5">
+                <div class="input-group mb-3 col-sm-13">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" style="width:100px " for="inputGroupSelect01">Estado</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">Activo</option>
+                        <option value="2">Inactivo</option>
+                        <option value="3">Pendinte</option>
+                    </select>
+                </div>
+            </div>
+            <button style="width:10%; margin-left: 45%" type="button" class="btn btn-light">Nuevo</button>
+            <br />
+            <h2> <center>Distribuciones</center></h2>
+
+            <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+
+                <div class="shadow p-3 mb-10 bg-white rounded" style="margin-left:4%">
+                    <table class="table">
+                        <thead class="thead-dark" style="background-color:aquamarine">
+                            <tr>
+                                <th>Id</th>
+                                <th>Habilitado</th>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th>Fecha</th>
+                                <th>Monto</th>
+                                <th>Monto Subjecutado</th>
+                                <th>Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <label style="width: 10%" class="checkbox-inline" id="inputGroup-sizing-default"><input type="checkbox" value=""></label>
+                                </td>
+                                <td>Asociacion 1</td>
+                                <td>Activo</td>
+                                <td>10/27/2019</td>
+                                <td>1000.000</td>
+                                <td>2000.000</td>
+                                <td>
+                                    <button style="width: 20% " type="button" class="btn  btn-link">Ver distribucion</button>
+                                    <br>
+                                    <button style="width:10%" type="button" class="btn btn-link">Aprobar</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
 </body>
-</html>
+</html> 
