@@ -263,18 +263,21 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\N_Proyecto\Nuevo_Proyecto.cshtml" />
     <Content Include="Views\Liquidar\Liquidar.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\ModificarCuenta\M_Cuenta.cshtml" />
+    <Content Include="Views\A_Distribucion\Aprobar_Distr.cshtml" />
+    <Content Include="Views\Depositar\Depositar.cshtml" />
+=======
     <Content Include="Views\Nu_Distribucion\Nueva Distribucion.cshtml" />
     <Content Include="Views\E_Distribuciones\Excluir Dsitribucion.cshtml" />
     <Content Include="Views\I_Distribuciones\Incluir Distribucion.cshtml" />
     <Content Include="Views\Com_Proyecto\Completar Proyecto.cshtml" />
     <Content Include="Views\Modelado\Modelado.cshtml" />
+>>>>>>> 1
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\A_Distribucion\" />
-    <Folder Include="Views\Depositar\" />
-    <Folder Include="Views\ModificarCuenta\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
