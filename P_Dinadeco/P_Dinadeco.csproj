@@ -153,12 +153,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Content\I_DistribucionesController.cs" />
     <Compile Include="Controllers\AsociadoController.cs" />
     <Compile Include="Controllers\A_DistribucionController.cs" />
+    <Compile Include="Controllers\Com_ProyectoController.cs" />
     <Compile Include="Controllers\DepositarController.cs" />
+    <Compile Include="Controllers\E_DistribucionesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LiquidarController.cs" />
+    <Compile Include="Controllers\ModeladoController.cs" />
     <Compile Include="Controllers\ModificarCuentaController.cs" />
+    <Compile Include="Controllers\Nu_DistribucionController.cs" />
     <Compile Include="Controllers\N_ProyectoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -266,11 +271,12 @@
     <Content Include="Views\ModificarCuenta\M_Cuenta.cshtml" />
     <Content Include="Views\A_Distribucion\Aprobar_Distr.cshtml" />
     <Content Include="Views\Depositar\Depositar.cshtml" />
-    <Content Include="Views\Nu_Distribucion\Nueva Distribucion.cshtml" />
-    <Content Include="Views\E_Distribuciones\Excluir Dsitribucion.cshtml" />
+    <Content Include="Views\Nu_Distribucion\Nueva_Distribucion.cshtml" />
     <Content Include="Views\I_Distribuciones\Incluir Distribucion.cshtml" />
-    <Content Include="Views\Com_Proyecto\Completar Proyecto.cshtml" />
     <Content Include="Views\Modelado\Modelado.cshtml" />
+    <Content Include="Views\Com_Proyecto\CompletarProyecto.cshtml" />
+    <Content Include="Views\E_Distribuciones\Excluir_Dist.cshtml" />
+    <Content Include="Views\I_Distribuciones\IncluirDist.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -303,7 +309,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51782</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
