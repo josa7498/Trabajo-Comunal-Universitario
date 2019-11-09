@@ -243,6 +243,11 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\Carousel_2.jpeg" />
+    <Content Include="Imagenes\Carousel_3.jpeg" />
+    <Content Include="Imagenes\Carousel_4.jpeg" />
+    <Content Include="Imagenes\Carousel_5.jpeg" />
+    <Content Include="Imagenes\Carousel_6.jpeg" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap-notify.js" />
