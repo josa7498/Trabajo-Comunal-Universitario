@@ -240,6 +240,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\styles\alert-bangtidy.css" />
     <Content Include="Content\styles\alert-blackgloss.css" />
+    <Content Include="css\font-awesome_Login.css" />
+    <Content Include="css\style_Login.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -248,6 +250,7 @@
     <Content Include="Imagenes\Carousel_4.jpeg" />
     <Content Include="Imagenes\Carousel_5.jpeg" />
     <Content Include="Imagenes\Carousel_6.jpeg" />
+    <Content Include="Imagenes\Dinadeco.jpg" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap-notify.js" />
@@ -278,6 +281,11 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
@@ -350,6 +358,7 @@
     <Content Include="Views\A_Proyecto\A_Proyect.cshtml" />
     <Content Include="Views\Tramitar\Tramitar.cshtml" />
     <Content Include="Views\Modificar\Modificar.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
