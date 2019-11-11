@@ -13,11 +13,9 @@ namespace P_Dinadeco.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Login()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+             return View();
         }
 
         public ActionResult Contact()

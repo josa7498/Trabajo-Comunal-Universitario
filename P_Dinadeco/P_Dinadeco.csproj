@@ -216,6 +216,7 @@
     <Compile Include="Controllers\E_DistribucionesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LiquidarController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ModeladoController.cs" />
     <Compile Include="Controllers\ModificarController.cs" />
     <Compile Include="Controllers\ModificarCuentaController.cs" />
