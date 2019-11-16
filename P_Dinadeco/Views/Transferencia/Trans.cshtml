@@ -13,37 +13,59 @@
     <br />
 
     <div class="jumbotron" style="border: 1px inset #66c2c2; margin: auto 10% auto 10%; background-color:transparent">
+
         <div class="container">
             <h1> <center> Transferencia de Fondos</center></h1>
 
             <br /> <br />
 
 
-                   <form>
-                       <div class="form-group">
-                           <label for="usr">Número Registro:</label>
-                           <input type="text" class="form-control" id="usr">
-                       </div>
+            <div class="row shadow-lg p-3 mb-5 bg-white rounded">
 
-                       <div class="form-group">
-                           <label for="usr">Cédula Juridica:</label>
-                           <input type="text" class="form-control" id="ced">
-                       </div>
-                       <button style="width:10%" type="button" class="btn btn-light">Buscar</button>
+                <div class="col-sm-6">
+                    <div class="input-group mb-3 col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:90px" id="inputGroup-sizing-default">Registro</span>
 
-                       <br /><br />
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 
-                   </form>
+                    </div>
 
+
+                </div>
+
+
+                <div class="col-sm-6">
+
+                    <div class="input-group mb-3 col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Cédula Juridica</span>
+
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <button style="width:10%" type="button" class="btn btn-light">Buscar</button>
 
             </div>
+
 
         </div>
 
 
 
+
+
         <br />
-      
+
         <div class="row shadow-lg p-3 mb-5 bg-white rounded">
 
             <div class="col-sm-7">
@@ -90,9 +112,9 @@
 
                 </div>
 
-                <button style="width:10%" type="button" class="btn btn-light" disabled>Modificar Cuentas</button>
-                <button style="width:10%" type="button" class="btn btn-light" disabled>Nuevo</button>
-                <button style="width:10%" type="button" class="btn btn-light" disabled>Liquidación de Proyectos</button>
+                <button style="width:30%" type="button" class="btn btn-light" disabled>Modificar Cuentas</button>
+                <button style="width:30%" type="button" class="btn btn-light" disabled>Nuevo</button>
+                <button style="width:30%" type="button" class="btn btn-light" disabled>Liquidación de Proyectos</button>
 
 
             </div>
@@ -140,13 +162,14 @@
 
         </div>
 
+        <div class="btn-group" role="group" aria-label="Basic example" style="float:right">
+            <button style="width:100%" type="button" class="btn btn-light">Atrás</button>
+            <button style="width:100%" type="button" class="btn btn-light">Guardar</button>
+        </div>
+    </div>
 
 
-            <div class="btn-group" role="group" aria-label="Basic example" style="float:right">
-
-                <button style="width: 10% " type="button" class="btn btn-light">Atras</button>
-                <button style="width:10%" type="button" class="btn btn-light">Guardar</button>
-            </div>
+    </div>
 
 
     @Scripts.Render("~/bundles/jquery")
