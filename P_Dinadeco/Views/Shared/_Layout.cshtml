@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="" />
+    <link href="~/css/Menu.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="~/Scripts/smoothscrolling.js"></script>
     <script src="~/Scripts/showhide.js"></script>
@@ -14,23 +16,18 @@
 </head>
 <body>
 
-   
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1E22AA; font-size: 15pt; color:white">
+    <header class="navbar navbar-expand-lg navbar-light">
 
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="color:white">
-            <ul class="navbar-nav justify-content-cente text-danger">
-
-
-
-                <li class="nav-item">
+        <!---<a class="navbar-brand" href="#">
+            <img src="~/Imagenes/Fondo.png" alt="">
+        </a>-->
+        
+        <div id="menu">
+            <ul>
+                <li>
                     <a class="nav-link  my-2 mr-sm-5" href="~/Asociado/Asociacion">Asociaciones </a>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle my-2 mr-sm-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Proyectos
@@ -39,10 +36,7 @@
                         <a class="dropdown-item" href="~/Liquidar/Liquidar">Liquidar</a>
                         <a class="dropdown-item" href="#">Proyecto</a>
                         <a class="dropdown-item" href="#">s</a>
-             
-                </a>
-                <
-</div>
+                    </div>
                 </li>
 
                 <li class="nav-item">
@@ -64,7 +58,57 @@
 
             </ul>
         </div>
-    </nav>
+    </header>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1E22AA; font-size: 15pt; color:white">
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="color:#2394">
+            <ul class="navbar-nav justify-content-cente text-danger">
+
+                <a class="navbar-brand" href="#">
+                    <img src="~/Imagenes/logo3.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                 </a>
+
+                <li class="nav-item">
+                    <a class="nav-link  my-2 mr-sm-5" href="~/Asociado/Asociacion">Asociaciones </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle my-2 mr-sm-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Proyectos
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="~/Liquidar/Liquidar">Liquidar</a>
+                        <a class="dropdown-item" href="#">Proyecto</a>
+                        <a class="dropdown-item" href="#">s</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link my-2 mr-sm-5" href="~/I_Distribuciones/IncluirDist">Distribución</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link my-2 mr-sm-5" href="#">Reporte</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link my-2 mr-sm-5" href="#">Mantenimiento</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link my-2 mr-sm-5" href="#">Usuarios</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav> -->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -1,0 +1,428 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Oswald:300&display=swap'); /*Fuente de goog*/
+
+body {
+    margin: 0;
+    padding: 0;
+    /*padding-top: 0;
+    padding-bottom: 0px;*/
+    background: url(imagenes/fondo.png);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+header {
+    width: 100%;
+    height: 90px;
+    float: hidden; /*errores corregir float*/
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*background: #d1b4b4;*/
+}
+
+
+
+#menu {
+    background: rgb(0,255,255);
+    background: -moz-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 0%, rgba(43,43,43,1) 0%, rgba(96,96,96,1) 9%, rgba(102,102,102,1) 10%, rgba(44,44,44,1) 35%, rgba(71,71,71,1) 39%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(28,28,28,1) 91%, rgba(28,28,28,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,76,76,1)), color-stop(0%, rgba(89,89,89,1)), color-stop(0%, rgba(43,43,43,1)), color-stop(9%, rgba(96,96,96,1)), color-stop(10%, rgba(102,102,102,1)), color-stop(35%, rgba(44,44,44,1)), color-stop(39%, rgba(71,71,71,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(17,17,17,1)), color-stop(91%, rgba(28,28,28,1)), color-stop(100%, rgba(28,28,28,1)));
+    background: -webkit-linear-gradient(left, rgba(30,34,170) 0%, rgba(0,255,255) 0%, rgba(30,34,170) 10%, rgba(0,255,255) 35%, rgba(30,34,170) 45%, rgba(0,255,255) 55%, rgba(30,34,170) 65%, rgba(0,255,255) 75%, rgba(30,34,170) 85%, rgba(0,255,255) 95%, rgba(30,34,170) 100%);
+    
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#1c1c1c', GradientType=1 );
+    width: 100%;
+    height: 52px;
+}
+
+ul {
+    float: left; /*poner horizontal*/
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    float: left;
+}
+/*pintar de otro color la letra*/
+#menu a {
+    color: rgba(17,17,17,1);
+    text-decoration: none;
+    display: block;
+    padding: 12px 26px;
+    font-family: "Oswald";
+    font-size: 22px;
+    float: left;
+}
+
+
+/*barra clases*/
+.barra {
+    color: rgb(0,255,255);
+    padding: 15px 0 0 0;
+}
+/*Cuando pulsa el puntero del mouse cambie de color*/
+#menu a:hover {
+    color: rgba(255,153,0,1);
+    background: rgba(0,0,0,0.2);
+    animation: 1s ms 1;
+}
+
+.logoDND {
+    float: left;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+.logoPresidencia {
+    float: right;
+    margin: 10px; /*arriba*/
+    width: 260px;
+    padding: 0px;
+}
+
+
+/*Animacion*/
+@keyframes ms {
+    0% {
+        opacity: 0;
+        transform: scale(1.6);
+    }
+}
+
+
+
+
+
+.logo {
+    float: inherit;
+    padding: 10px;
+    /*margin-top:10px;
+    width: 162px;
+    height: 75px;*/
+    /* background:url(/imagenes/LOGODINADECO.png)no-repeat top left;*/
+    /*margin: 0px 15px 10px;*/
+}
+
+.TextoHeader {
+    font-size: 22px;
+    color: #243E99;
+    padding: 9px 0px 5px;
+    font-family: 'Jura', sans-serif;
+    line-height: 0.9;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.texto h1 {
+    font-size: 22px;
+    color: #1E22AA;
+    font-family: 'Jura', sans-serif;
+    line-height: 0.9;
+}
+
+.TextoHeader span,
+.TextoHeader h1 span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.TextoHeader br.Hidde {
+    display: none;
+}
+
+.parrafo {
+    font-size: 18px;
+    line-height: 0.5;
+    color: navy;
+}
+
+
+
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+
+/*Tabla */
+.datagrid table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+    .datagrid table td, .datagrid table th {
+        padding: 3px 10px;
+    }
+
+    .datagrid table thead th {
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+        background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+        background-color: #006699;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold;
+        border-left: 1px solid #0070A8;
+    }
+
+        .datagrid table thead th:first-child {
+            border: none;
+        }
+
+    .datagrid table tbody td {
+        color: #00496B;
+        border-left: 1px solid #E1EEF4;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .datagrid table tbody .alt td {
+        background: #E1EEF4;
+        color: #00496B;
+    }
+
+    .datagrid table tbody td:first-child {
+        border-left: none;
+    }
+
+    .datagrid table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .datagrid table tfoot td div {
+        border-top: 1px solid #006699;
+        background: #E1EEF4;
+    }
+
+    .datagrid table tfoot td {
+        padding: 0;
+        font-size: 12px
+    }
+
+        .datagrid table tfoot td div {
+            padding: 2px;
+        }
+
+        .datagrid table tfoot td ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+        }
+
+    .datagrid table tfoot li {
+        display: inline;
+    }
+
+        .datagrid table tfoot li a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 2px 8px;
+            margin: 1px;
+            color: #FFFFFF;
+            border: 1px solid #006699;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+            background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+            background-color: #006699;
+        }
+
+    .datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover {
+        text-decoration: none;
+        border-color: #006699;
+        color: #FFFFFF;
+        background: none;
+        background-color: #00557F;
+    }
+
+div.dhtmlx_window_active, div.dhx_modal_cover_dv {
+    position: fixed !important;
+}
+
+
+footer {
+    width: 100%;
+    margin: 20px auto;
+    background-color: ghostwhite;
+}
+
+.LogoFooter {
+    width: 115px;
+    height: 53px;
+    /*background:url(/images/logo_meic_footer.png) no-repeat top left;*/
+    margin: 0px 15px 10px 0px;
+}
+
+.InfoFooter {
+    font-family: Arial;
+    font-size: 16px;
+    color: rgba(17,17,17,1);
+    text-align: left;
+    margin-left: 100px;
+}
+
+    .InfoFooter span {
+        font-size: 18px;
+        font-family: sans-serif;
+        color: #2548C0;
+    }
+
+
+
+/*botones del datatable*/
+:after, :before {
+    box-sizing: border-box;
+}
+
+/*a {
+    color: #337ab7;
+    text-decoration: none;
+}*/
+i {
+    margin-bottom: 4px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.btn-app {
+    color: white;
+    box-shadow: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 10px 15px;
+    margin: 0;
+    min-width: 60px;
+    max-width: 80px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    font-size: 12px;
+    transition: all .2s;
+    background-color: steelblue !important;
+}
+
+    .btn-app > .fa, .btn-app > .glyphicon, .btn-app > .ion {
+        font-size: 30px;
+        display: block;
+    }
+
+    .btn-app:hover {
+        border-color: #aaa;
+        transform: scale(1.1);
+    }
+
+.pdf {
+    background-color: #dc2f2f !important;
+}
+
+.excel {
+    background-color: #3ca23c !important;
+}
+
+.csv {
+    background-color: #e86c3a !important;
+}
+
+.imprimir {
+    background-color: #8766b1 !important;
+}
+
+/*
+Esto es opcional pero sirve para que todos los botones de exportacion se distribuyan de manera equitativa usando flexbox
+
+.flexcontent {
+    display: flex;
+    justify-content: space-around;
+}
+*/
+
+/*.selectTable{
+  height:40px;
+  float:right;
+}*/
+
+/*div.dataTables_wrapper div.dataTables_filter {
+    text-align: left;
+    margin-top: 15px;
+}*/
+
+.btn-secondary {
+    color: #fff;
+    background-color: #4682b4;
+    border-color: #4682b4;
+}
+
+    .btn-secondary:hover {
+        color: #fff;
+        background-color: #315f86;
+        border-color: #545b62;
+    }
+
+
+
+.titulo-tabla {
+    color: #606263;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.inline {
+    display: inline-block;
+    padding: 0;
+}
+
+.icon:before {
+    font-family: FontAwesome;
+    content: "/";
+}

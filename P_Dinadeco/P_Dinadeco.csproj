@@ -195,7 +195,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Content\I_DistribucionesController.cs" />
+    <Compile Include="Controllers\I_DistribucionesController.cs" />
     <Compile Include="Controllers\AsociadoController.cs" />
     <Compile Include="Controllers\A_DistribucionController.cs" />
     <Compile Include="Controllers\A_ProyectoController.cs" />
@@ -231,6 +231,7 @@
     <Content Include="Content\styles\alert-bangtidy.css" />
     <Content Include="Content\styles\alert-blackgloss.css" />
     <Content Include="css\font-awesome_Login.css" />
+    <Content Include="css\Menu.css" />
     <Content Include="css\style_Login.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -241,6 +242,10 @@
     <Content Include="Imagenes\Carousel_5.jpeg" />
     <Content Include="Imagenes\Carousel_6.jpeg" />
     <Content Include="Imagenes\Dinadeco.jpg" />
+    <Content Include="Imagenes\Fondo.png" />
+    <Content Include="Imagenes\Logo.png" />
+    <Content Include="Imagenes\logo3.png" />
+    <Content Include="Imagenes\logoDinadeco2.png" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap-notify.js" />
