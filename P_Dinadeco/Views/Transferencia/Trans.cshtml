@@ -1,1 +1,181 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en" style="height:100%; width: 100% ">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="width:100%">
+    <br />
+
+    <div class="jumbotron" style="border: 1px inset #66c2c2; margin: auto 10% auto 10%; background-color:transparent">
+
+        <div class="container">
+            <h1> <center> Transferencia de Fondos</center></h1>
+
+            <br /> <br />
+
+
+            <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+
+                <div class="col-sm-6">
+                    <div class="input-group mb-3 col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:90px" id="inputGroup-sizing-default">Registro</span>
+
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-sm-6">
+
+                    <div class="input-group mb-3 col-sm-9">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Cédula Juridica</span>
+
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <button style="width:10%" type="button" class="btn btn-light">Buscar</button>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <br />
+
+        <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+
+            <div class="col-sm-7">
+                <div class="input-group mb-3 col-sm-9">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Número Registro</span>
+
+                    </div>
+                    <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                </div>
+
+                <div class="input-group mb-3 col-sm-9">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Vencimiento</span>
+
+                    </div>
+                    <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                </div>
+
+                <div class="input-group mb-3 col-sm-9">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Tipo</span>
+
+                    </div>
+                    <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                </div>
+
+                <div class="input-group mb-3 col-sm-9">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Estado</span>
+
+                    </div>
+                    <input type="text" class="form-control" style="width:100px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                </div>
+                <div class="input-group mb-3 col-sm-9">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:350px" id="inputGroup-sizing-default">Estado de la Asocación ""Detalle Pendientes""</span>
+
+                    </div>
+
+                </div>
+
+                <button style="width:30%" type="button" class="btn btn-light" disabled>Modificar Cuentas</button>
+                <button style="width:30%" type="button" class="btn btn-light" disabled>Nuevo</button>
+                <button style="width:30%" type="button" class="btn btn-light" disabled>Liquidación de Proyectos</button>
+
+
+            </div>
+
+
+            <div class="col-sm-4">
+
+                <div class="input-group mb-3 col-sm-14">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Periodo</span>
+                    </div>
+                    <input type="text" class="form-control" style="width:50px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+
+
+
+                <div class="input-group mb-3 col-sm-14">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Cédula</span>
+                    </div>
+                    <input type="text" class="form-control" style="width:50px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+
+
+                <div class="input-group mb-3 col-sm-14">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text " style="width:150px" id="inputGroup-sizing-default">Nombre</span>
+                    </div>
+                    <input type="text" class="form-control" style="width:50px" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+
+            <div class="input-group mb-3 col-sm-10 ">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" style="width:165px" for="inputGroupSelect01">Estado</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option value="1">Ingresado</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+
+
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example" style="float:right">
+            <button style="width:100%" type="button" class="btn btn-light">Atrás</button>
+            <button style="width:100%" type="button" class="btn btn-light">Guardar</button>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+</body>
+</html>
+
