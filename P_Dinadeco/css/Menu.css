@@ -281,14 +281,14 @@ div.dhtmlx_window_active, div.dhx_modal_cover_dv {
 
 footer {
     width: 100%;
-    margin: 20px auto;
+    margin: 0px;
     background-color: ghostwhite;
 }
 
 .LogoFooter {
     width: 115px;
     height: 53px;
-    /*background:url(/images/logo_meic_footer.png) no-repeat top left;*/
+   
     margin: 0px 15px 10px 0px;
 }
 
@@ -313,10 +313,6 @@ footer {
     box-sizing: border-box;
 }
 
-/*a {
-    color: #337ab7;
-    text-decoration: none;
-}*/
 i {
     margin-bottom: 4px;
 }
@@ -364,21 +360,7 @@ i {
         transform: scale(1.1);
     }
 
-.pdf {
-    background-color: #dc2f2f !important;
-}
 
-.excel {
-    background-color: #3ca23c !important;
-}
-
-.csv {
-    background-color: #e86c3a !important;
-}
-
-.imprimir {
-    background-color: #8766b1 !important;
-}
 
 /*
 Esto es opcional pero sirve para que todos los botones de exportacion se distribuyan de manera equitativa usando flexbox
