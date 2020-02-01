@@ -18,7 +18,7 @@ body {
 
 header {
     width: 100%;
-    height: 90px;
+    height: 100px;
     float: hidden; /*errores corregir float*/
     margin: 0;
     margin-top: 0px;
@@ -41,7 +41,7 @@ header {
 #menu {
     background: rgb(255,255,255);
     width: 100%;
-    height: 52px;
+    height: 40px;
 }
 
 ul {
@@ -276,13 +276,14 @@ div.dhtmlx_window_active, div.dhx_modal_cover_dv {
 
 footer {
     width: 100%;
+
     margin: 20px auto;
     background-color: ghostwhite;
 }
 
 .LogoFooter {
     width: 115px;
-    height: 53px;
+    height: 115px;
     /*background:url(/images/logo_meic_footer.png) no-repeat top left;*/
     margin: 0px 15px 10px 0px;
 }
