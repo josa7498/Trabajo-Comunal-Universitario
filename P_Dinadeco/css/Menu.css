@@ -38,6 +38,11 @@ header {
  
 }
 
+.responsive {
+      width: 100%;
+ 
+  height: 180px;
+}
 #menu {
     background: rgb(255,255,255);
     width: 100%;
