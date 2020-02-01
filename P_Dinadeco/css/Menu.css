@@ -3,13 +3,10 @@
 body {
     margin: 0;
     padding: 0;
-    /*padding-top: 0;
-    padding-bottom: 0px;*/
-    background: url(imagenes/fondo.png);
+    padding-top: 0;
+    padding-bottom: 0px;
     background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+  
 }
 
 
@@ -26,7 +23,7 @@ header {
     margin: 0;
     margin-top: 0px;
     margin-bottom: 0px;
-    /*background: #d1b4b4;*/
+    
 }
 
 
@@ -37,7 +34,7 @@ header {
 
 #second_element {
     position: relative;
-    width: 500px;
+   
  
 }
 
