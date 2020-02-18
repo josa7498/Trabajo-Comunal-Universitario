@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b492d65c604c4633a6c8fc84f4e29cc3" Name="Diagram1">
+      <Diagram DiagramId="b492d65c604c4633a6c8fc84f4e29cc3" Name="Diagram1" ZoomLevel="62">
         <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_acuerdo" Width="1.5" PointX="3.75" PointY="27.5" IsExpanded="true" />
         <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_asientos" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_asociacion" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
