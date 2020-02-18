@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b492d65c604c4633a6c8fc84f4e29cc3" Name="Diagram1">
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_acuerdo" Width="1.5" PointX="3.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_asientos" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_asociacion" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_asociacion_historic" Width="1.5" PointX="13.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_bitacora" Width="1.5" PointX="5.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_bitacora_imprimibles" Width="1.5" PointX="16.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_cambiospresi" Width="1.5" PointX="2.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_cantones" Width="1.5" PointX="15.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_impresion" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_inscripcion" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_juntadirectiva" Width="1.5" PointX="6" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_miembrosjunta" Width="1.5" PointX="11" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_pais" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_periodo" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_persona" Width="1.5" PointX="8.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_personas_junta_importacion" Width="1.5" PointX="18.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_puestojunta" Width="1.5" PointX="8.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_region" Width="1.5" PointX="13.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_regional" Width="1.5" PointX="16" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_resolucionlegal" Width="1.5" PointX="3" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_resolucionlegalasamblea" Width="1.5" PointX="11" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_responsable" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_tipo" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_cuentas" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_deposito" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_dist_aprobacion" Width="1.5" PointX="7.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_dist_asignacion" Width="1.5" PointX="12.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_dist_exclusion" Width="1.5" PointX="14.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_dist_inclusion" Width="1.5" PointX="14.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_distribucion" Width="1.5" PointX="10" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_institucionesfinancieras" Width="1.5" PointX="11.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_liquidacion" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_partida" Width="1.5" PointX="9.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_proy_aprobacion" Width="1.5" PointX="12" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_proy_cambioestado" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_proyecto" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_subtipoproyecto" Width="1.5" PointX="18.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dnf_tipoproyecto" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.padron" Width="1.5" PointX="19.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_acuerdos_importacion" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_asociacion_importacion" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_distritos" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_provincias" Width="1.5" PointX="5.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dinadeco_PruebaModel.dna_v_bitacora" Width="1.5" PointX="20.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_juntadirectiva_ibfk_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_impresion_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_juntadirectiva_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_miembrosjunta_ibfk_6" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_miembrosjunta_ibfk_7" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_resolucionlegalasamblea_ibfk_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_regional_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dna_resolucionlegal_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dnf_deposito_proyecto" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dnf_liquidacion_deposito" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dnf_distribucion_aprobacion" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dnf_asignacion_distribucion" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.fk_distexlusion_asignacion" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.fk_distinclusion_asignacion" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.dnf_proy_aprobacion_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.fk_cambioestado_proyecto" ManuallyRouted="false" />
+        <AssociationConnector Association="Dinadeco_PruebaModel.fk_proyecto_tipo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
