@@ -216,133 +216,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_acuerdo.cs">
+    <Compile Include="Models\Cita.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_acuerdos_importacion.cs">
+    <Compile Include="Models\Especialidad.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_asientos.cs">
+    <Compile Include="Models\Facturacion.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_asociacion.cs">
+    <Compile Include="Models\Ingreso.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_asociacion_historic.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_asociacion_importacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_bitacora.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_bitacora_imprimibles.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_cambiospresi.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_cantones.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_distritos.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_impresion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_inscripcion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_juntadirectiva.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_miembrosjunta.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_pais.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_periodo.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_persona.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_personas_junta_importacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_provincias.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_puestojunta.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_region.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_regional.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_resolucionlegal.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_resolucionlegalasamblea.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_responsable.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_tipo.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_v_bitacora.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_cuentas.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_deposito.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_distribucion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_dist_aprobacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_dist_asignacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_dist_exclusion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_dist_inclusion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_institucionesfinancieras.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_liquidacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_partida.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_proyecto.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_proy_aprobacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_proy_cambioestado.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_subtipoproyecto.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_tipoproyecto.cs">
+    <Compile Include="Models\Medico.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ModeloDinadeco.Context.cs">
@@ -360,9 +246,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModeloDinadeco.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\padron.cs">
+    <Compile Include="Models\Paciente.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Patologia.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UnintentionalCodeFirstException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
