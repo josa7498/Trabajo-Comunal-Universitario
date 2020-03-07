@@ -12,16 +12,13 @@ namespace P_Dinadeco.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class dnf_deposito
+    public partial class Distrito
     {
-        public int id { get; set; }
-        public Nullable<int> id_distasignacion { get; set; }
-        public Nullable<int> id_proyecto { get; set; }
-        public string observaciones { get; set; }
-        public byte proyecto { get; set; }
-        public System.DateTime fecha_ingreso { get; set; }
-        public System.DateTime fecha_deposito { get; set; }
-        public System.DateTime fecha_limite { get; set; }
-        public string planilla { get; set; }
+        public int idProvincia { get; set; }
+        public int idCanton { get; set; }
+        public int idDistrito { get; set; }
+        public string nombreDistrito { get; set; }
+    
+        public virtual Canton Canton { get; set; }
     }
 }

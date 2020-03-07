@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
@@ -59,8 +59,11 @@
       <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
@@ -216,91 +219,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_acuerdo.cs">
+    <Compile Include="Models\Acuerdo.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_acuerdos_importacion.cs">
+    <Compile Include="Models\Asociacion.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_asientos.cs">
+    <Compile Include="Models\Canton.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dna_asociacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_asociacion_historic.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_asociacion_importacion.cs">
+    <Compile Include="Models\Distrito.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\dna_bitacora.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\dna_bitacora_imprimibles.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_cambiospresi.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_cantones.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_distritos.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_impresion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_inscripcion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_juntadirectiva.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_miembrosjunta.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_pais.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_periodo.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_persona.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_personas_junta_importacion.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_provincias.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_puestojunta.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_region.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_regional.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_resolucionlegal.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_resolucionlegalasamblea.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_responsable.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_tipo.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dna_v_bitacora.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dnf_cuentas.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\dnf_deposito.cs">
@@ -327,9 +261,6 @@
     <Compile Include="Models\dnf_liquidacion.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\dnf_partida.cs">
-      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\dnf_proyecto.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
@@ -343,6 +274,15 @@
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\dnf_tipoproyecto.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Estado.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EstadoAsociacion.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Miembro.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ModeloDinadeco.Context.cs">
@@ -360,7 +300,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModeloDinadeco.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\padron.cs">
+    <Compile Include="Models\Provincia.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Puesto.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Region.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Regional.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoAcuerdo.cs">
+      <DependentUpon>ModeloDinadeco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoAsociacion.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -577,10 +532,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
   </Target>
-  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
