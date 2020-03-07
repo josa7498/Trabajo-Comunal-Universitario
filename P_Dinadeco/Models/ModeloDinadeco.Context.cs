@@ -18,6 +18,7 @@ namespace P_Dinadeco.Models
         public DINADECO_BDEntities()
             : base("name=DINADECO_BDEntities")
         {
+
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
