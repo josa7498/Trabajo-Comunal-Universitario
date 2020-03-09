@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DINADECO_BDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DINADECO_BDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Acuerdo">
           <Key>
             <PropertyRef Name="idAcuerdo" />
@@ -264,8 +264,8 @@
           <Property Name="nombre" Type="varchar" MaxLength="1" Nullable="false" />
           <Property Name="descripcion" Type="varchar" MaxLength="1" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'DINADECO_BD.dbo.dnf_v_asignacion' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'DINADECO_BD.dbo.dnf_v_asignacion' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
         <EntityType Name="dnf_v_asignacion">
           <Property Name="id" Type="int" />
           <Property Name="asociacion" Type="int" />
@@ -277,8 +277,8 @@ warning 6013: The table/view 'DINADECO_BD.dbo.dnf_v_asignacion' does not have a 
           <Property Name="fecha_deposito" Type="varchar" MaxLength="1" />
           <Property Name="fecha_liquidacion" Type="varchar" MaxLength="1" />
         </EntityType>-->
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'DINADECO_BD.dbo.dnf_v_proyecto' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'DINADECO_BD.dbo.dnf_v_proyecto' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
         <EntityType Name="dnf_v_proyecto">
           <Property Name="id" Type="int" />
           <Property Name="asociacion" Type="int" />
@@ -649,8 +649,7 @@ warning 6013: The table/view 'DINADECO_BD.dbo.dnf_v_proyecto' does not have a pr
             <End Role="Asociacion" EntitySet="Asociacion" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DINADECO_BDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">

@@ -228,6 +228,18 @@
     <Compile Include="Models\Canton.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Clases\SelectAcuerdo.cs" />
+    <Compile Include="Models\Clases\SelectAsociacion.cs" />
+    <Compile Include="Models\Clases\SelectA_Distribucion.cs" />
+    <Compile Include="Models\Clases\SelectA_Proyecto.cs" />
+    <Compile Include="Models\Clases\SelectCambiarEstadoProyect.cs" />
+    <Compile Include="Models\Clases\SelectCambioEstado.cs" />
+    <Compile Include="Models\Clases\SelectDeposito.cs" />
+    <Compile Include="Models\Clases\SelectDistribucion.cs" />
+    <Compile Include="Models\Clases\SelectExclusionDistribucion.cs" />
+    <Compile Include="Models\Clases\SelectInclusionDistribucion.cs" />
+    <Compile Include="Models\Clases\SelectLiquidacion.cs" />
+    <Compile Include="Models\Clases\SelectProyecto.cs" />
     <Compile Include="Models\Distrito.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
