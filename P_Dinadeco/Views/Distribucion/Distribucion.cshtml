@@ -72,8 +72,10 @@
                     </thead>
 
                     <tbody>
-                       @foreach(var obj_Distribucion in Model)
+                       @if (Model != null)
                        {
+                           foreach (var obj_Distribucion in Model)
+                           {
                         <tr>
 
                             <th>@obj_Distribucion.id</th>
@@ -86,7 +88,8 @@
                             <td>@obj_Distribucion.monto_subejecutado</td>
 
                         </tr>
-                       }
+                           }
+                        }
                     </tbody>
                 </table>
 
