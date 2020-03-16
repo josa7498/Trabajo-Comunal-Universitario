@@ -198,6 +198,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DistribucionController.cs" />
     <Compile Include="Controllers\I_DistribucionesController.cs" />
     <Compile Include="Controllers\AsociadoController.cs" />
     <Compile Include="Controllers\A_DistribucionController.cs" />
@@ -228,6 +229,7 @@
     <Compile Include="Models\Canton.cs">
       <DependentUpon>ModeloDinadeco.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Clases\AddNuevaDistribucion.cs" />
     <Compile Include="Models\Clases\SelectAcuerdo.cs" />
     <Compile Include="Models\Clases\SelectAsociacion.cs" />
     <Compile Include="Models\Clases\SelectA_Distribucion.cs" />
@@ -485,6 +487,8 @@
     <Content Include="Views\Tramitar\Tramitar.cshtml" />
     <Content Include="Views\Modificar\Modificar.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Distribucion\Nueva_Distribucion.cshtml" />
+    <Content Include="Views\Distribucion\Distribucion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
