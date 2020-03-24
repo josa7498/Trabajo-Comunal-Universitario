@@ -1,175 +1,103 @@
-﻿
-<!DOCTYPE html>
-<html lang="en" style="height:100%; width: 100% ">
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-<body style="width:100%">
-    <br />
+﻿@model P_Dinadeco.Models.Clases.AddNuevaDistribucion
 
-    <div class="jumbotron" style="border: 1px inset #66c2c2; margin: auto 10% auto 10%; background-color:transparent">
+@{
+    ViewBag.Title = "Nueva distribución";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/Content/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+<br />
+<br />
+<br />
+
+<!--  -->
+<!--<ul class="breadcrumb">
+    <li><a href="/Home/Index/">SIICE - Inicio</a></li>
+    <li><a href="/Usuario/Administrador/">Administrativo</a></li>
+    <li><a href="/Gestiones/Gestiones/">Gestiones</a></li>
+    <li>Nueva Gestión</li>
+</ul>-->
+
+<div>
+    <h2>Nueva Distribución</h2>
+</div>
+
+<hr class="hr-custom">
+
+@using (Html.BeginForm("Nueva_Distribucion", "Distribucion", FormMethod.Post))
+{
+    <div class="jumbotron" style="border: 0px inset; margin: auto 10% auto 10%; background-color:transparent">
         <div class="container">
-            <h1><center>Nueva distribución</center></h1>
-
-            <br /> <br />
-
             <div class="row shadow p-3 mb-5 bg-white rounded">
+                <div class="col-sm-6">
+                    @Html.LabelFor(d => d.nombre)
+                    @Html.TextBoxFor(d => d.nombre, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.nombre, null, new { @class = "text-danger" })
+                </div>
+                <br />
 
                 <div class="col-sm-6">
-                    <div class="input-group mb-3 col-sm-10">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text " style="width:145px" id="inputGroup-sizing-default">Nombre</span>
-
-                        </div>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
+                    @Html.LabelFor(e => e.estado)
+                    <br />
+                    @Html.DropDownList("estado", new List<SelectListItem>
+{
+   new SelectListItem{Text= "Activo"},
+   new SelectListItem{Text= "Inactivo"},
+   new SelectListItem{Text= "Pendiente"}
+}, "Seleccione un estado", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(e => e.estado, null, new { @class = "text-danger" })
+                </div>
+                
+                <br /><br />
+                <div class="col-sm-12">
+                    <div>
+                        @Html.LabelFor(d => d.fecha_ingreso)
+                        @Html.EditorFor(d => d.fecha_ingreso, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_ingreso, null, new { @class = "text-danger" })
                     </div>
-
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="input-group mb-3 col-sm-10">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Estado</label>
-                        </div>
-                        <select class="custom-select" id="inputGroupSelect01">
-                            <option selected>Choose...</option>
-                            <option value="1">Activo</option>
-                            <option value="2">Inactivo</option>
-                            <option value="3">Pendinte</option>
-                        </select>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-
-        <hr class="my-4">
-
-        <br /><br />
-        <div class="row shadow p-3 mb-5 bg-white rounded" style="border:1px inset ; margin: auto 10% auto 10%; background-color:transparent">
-
-            <div class="input-group mb-3 col-sm-11">
-                <div class="input-group-prepend">
-                    <span class="input-group-text " style="width:230px" id="inputGroup-sizing-default">Fecha de liquidación</span>
-
-                </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-            </div>
-
-
-            <div class="input-group mb-3 col-sm-11">
-                <div class="input-group-prepend">
-                    <span class="input-group-text " style="width:230px" id="inputGroup-sizing-default">Fecha de Ingreso</span>
-
-                </div>
-                <input type="text" id="fecha" name="fecha" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-            </div>
-
-            <div class="input-group mb-3 col-sm-11">
-                <div class="input-group-prepend">
-                    <span class="input-group-text " style="width:230px" id="inputGroup-sizing-default">Fecha de Corte de Distribucion</span>
-
-                </div>
-                <input type="text" id="fecha1" name="fecha" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-            </div>
-
-
-            <div class="input-group mb-3 col-sm-11">
-                <div class="input-group-prepend">
-                    <span class="input-group-text " style="width:230%" id="inputGroup-sizing-default">Resolucion Periodo de Gracia</span>
-
-                </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-            </div>
-
-            <div class="input-group mb-3 col-sm-11">
-                <div class="input-group-prepend">
-                    <span class="input-group-text " style="width:230px" id="inputGroup-sizing-default">Acuerdo Periodo de Gracia</span>
-
-                </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-            </div>
-
-            <div class="input-group mb-3 col-sm-12">
-                <div class="input-group-prepend">
-                    <span class="input-group-text " style="width:230px" id="inputGroup-sizing-default">Fecha limite periodo de Gracia</span>
-
-                </div>
-                <input type="text" id="fecha2" name="fecha" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-            </div>
-
-
-            <div class="input-group mb-3 col-sm-11">
-                <div class="input-group-prepend">
-                    <span class="input-group-text " style="width:230px" id="inputGroup-sizing-default">Fecha de Inspeccion</span>
-
-                </div>
-                <input type="text" id="fecha" name="fecha3" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-            </div>
-
-            <br /><br />
-
-            <div class=" col-sm-9">
-                <div style="padding-left: 2%" class="input-group-prepend">
-                    <label style="width: 71%" class="checkbox-inline" id="inputGroup-sizing-default">
-                        <input type="checkbox" value="">Distribucion del 2%
-                    </label>
+                    
                     <br /><br />
-                    <label class="checkbox-inline" id="inputGroup-sizing-default">
-                        <input type="checkbox" value="">Distribucion Cemento
+                    <div>
+                        @Html.LabelFor(d => d.fecha_corte)
+                        @Html.EditorFor(d => d.fecha_corte, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_corte, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.resolucion)
+                        @Html.TextBoxFor(d => d.resolucion, "", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.resolucion, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.acuerdo)
+                        @Html.TextBoxFor(d => d.acuerdo, "", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.acuerdo, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.fecha_limite)
+                        @Html.EditorFor(d => d.fecha_limite, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_limite, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.fecha_impresion)
+                        @Html.EditorFor(d => d.fecha_impresion, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_impresion, null, new { @class = "text-danger" })
+                    </div>
+                </div>
+                <br /><br />
+                <div style="text-align: left">
+                    <input value="Guardar" class="btn btn-primary" type="submit" />
                 </div>
             </div>
         </div>
-
-
-
-        <div class="btn-group" role="group" aria-label="Basic example" style="float:right">
-            <button type="button" class="btn btn-outline-primary btn-lg">Cancelar</button>
-            <button type="button" class="btn btn-outline-primary btn-lg">Aceptar</button>
-        </div>
-
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $('#fecha').datepicker();
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('#fecha1').datepicker();
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('#fecha2').datepicker();
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('#fecha3').datepicker();
-        });
-    </script>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+}
 
 
-</body>
-</html>

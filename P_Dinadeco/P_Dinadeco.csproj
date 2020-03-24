@@ -476,19 +476,19 @@
     <Content Include="Views\A_Distribucion\Aprobar_Distr.cshtml" />
     <Content Include="Views\Depositar\Depositar.cshtml" />
     <Content Include="Views\Nu_Distribucion\Nueva_Distribucion.cshtml" />
-    <Content Include="Views\I_Distribuciones\Incluir Distribucion.cshtml" />
     <Content Include="Views\Modelado\Modelado.cshtml" />
     <Content Include="Views\Com_Proyecto\CompletarProyecto.cshtml" />
-    <Content Include="Views\E_Distribuciones\Excluir_Dist.cshtml" />
-    <Content Include="Views\I_Distribuciones\IncluirDist.cshtml" />
     <Content Include="Views\Transferencia\Trans.cshtml" />
     <Content Include="Views\CambiarEstado\CamEstado.cshtml" />
     <Content Include="Views\A_Proyecto\A_Proyect.cshtml" />
     <Content Include="Views\Tramitar\Tramitar.cshtml" />
     <Content Include="Views\Modificar\Modificar.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
-    <Content Include="Views\Distribucion\Nueva_Distribucion.cshtml" />
     <Content Include="Views\Distribucion\Distribucion.cshtml" />
+    <Content Include="Views\Distribucion\Aprobar_Distribucion.cshtml" />
+    <Content Include="Views\Distribucion\Excluir_Distribucion.cshtml" />
+    <Content Include="Views\Distribucion\Incluir_Distribucion.cshtml" />
+    <Content Include="Views\Distribucion\Nueva_Distribucion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
