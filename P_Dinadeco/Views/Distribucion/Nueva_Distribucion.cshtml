@@ -1,0 +1,103 @@
+﻿@model P_Dinadeco.Models.Clases.AddNuevaDistribucion
+
+@{
+    ViewBag.Title = "Nueva distribución";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/Content/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+<br />
+<br />
+<br />
+
+<!--  -->
+<!--<ul class="breadcrumb">
+    <li><a href="/Home/Index/">SIICE - Inicio</a></li>
+    <li><a href="/Usuario/Administrador/">Administrativo</a></li>
+    <li><a href="/Gestiones/Gestiones/">Gestiones</a></li>
+    <li>Nueva Gestión</li>
+</ul>-->
+
+<div>
+    <h2>Nueva Distribución</h2>
+</div>
+
+<hr class="hr-custom">
+
+@using (Html.BeginForm("Nueva_Distribucion", "Distribucion", FormMethod.Post))
+{
+    <div class="jumbotron" style="border: 0px inset; margin: auto 10% auto 10%; background-color:transparent">
+        <div class="container">
+            <div class="row shadow p-3 mb-5 bg-white rounded">
+                <div class="col-sm-6">
+                    @Html.LabelFor(d => d.nombre)
+                    @Html.TextBoxFor(d => d.nombre, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.nombre, null, new { @class = "text-danger" })
+                </div>
+                <br />
+
+                <div class="col-sm-6">
+                    @Html.LabelFor(e => e.estado)
+                    <br />
+                    @Html.DropDownList("estado", new List<SelectListItem>
+{
+   new SelectListItem{Text= "Activo"},
+   new SelectListItem{Text= "Inactivo"},
+   new SelectListItem{Text= "Pendiente"}
+}, "Seleccione un estado", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(e => e.estado, null, new { @class = "text-danger" })
+                </div>
+                
+                <br /><br />
+                <div class="col-sm-12">
+                    <div>
+                        @Html.LabelFor(d => d.fecha_ingreso)
+                        @Html.EditorFor(d => d.fecha_ingreso, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_ingreso, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.fecha_corte)
+                        @Html.EditorFor(d => d.fecha_corte, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_corte, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.resolucion)
+                        @Html.TextBoxFor(d => d.resolucion, "", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.resolucion, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.acuerdo)
+                        @Html.TextBoxFor(d => d.acuerdo, "", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.acuerdo, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.fecha_limite)
+                        @Html.EditorFor(d => d.fecha_limite, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_limite, null, new { @class = "text-danger" })
+                    </div>
+                    
+                    <br /><br />
+                    <div>
+                        @Html.LabelFor(d => d.fecha_impresion)
+                        @Html.EditorFor(d => d.fecha_impresion, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.fecha_impresion, null, new { @class = "text-danger" })
+                    </div>
+                </div>
+                <br /><br />
+                <div style="text-align: left">
+                    <input value="Guardar" class="btn btn-primary" type="submit" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+

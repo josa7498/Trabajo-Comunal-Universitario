@@ -1,0 +1,124 @@
+﻿@model List<P_Dinadeco.Models.Clases.SelectDistribucion>
+
+@{
+    ViewBag.Title = "Listado de Distribución";
+}
+
+<html lang="en" style="height:100%; width: 100% ">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="width:100%">
+    <br />
+
+    <div class="jumbotron" style="border: 1px inset #66c2c2; margin: auto 10% auto 10%; background-color:transparent">
+        <div class="container">
+            <h1> <center>Distribución</center></h1>
+
+            <br /> <br />
+
+            <div class="row shadow p-3 mb-5 bg-white rounded">
+
+
+                <div style="margin-left: 30%" class=" col-sm-5">
+                    <div class="input-group mb-3 col-sm-13">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" style="width:150px " for="inputGroupSelect01">Estado</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Seleccion</option>
+                            <option value="1">Aprobado</option>
+                            <option value="2">Ingresado</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container" style="text-align: right; padding: 2px; width:25%;">
+                    <a href="~/Distribucion/Nueva_Distribucion" class="btn btn-primary">Nuevo</a>
+                </div>
+
+
+                <br />
+                <br />
+
+
+            </div>
+
+            <hr class="my-4">
+
+            <br />
+
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <table class="table">
+                    <thead class="thead-dark" style="background-color:aquamarine">
+                        <tr>
+                            <th>Código</th>
+                            <th>Habilitado</th>
+                            <th>Nombre</th>
+                            <th>Estado</th>
+                            <th>Fecha de ingreso</th>
+                            <th>Monto</th>
+                            <th>Monto subejecutado</th>
+                            <th>Opciones</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                       @if (Model != null)
+                       {
+                           foreach (var obj_Distribucion in Model)
+                           {
+                        <tr>
+
+                            <th>@obj_Distribucion.id</th>
+                            <td>@obj_Distribucion.habilitado</td>
+                            <td>@obj_Distribucion.nombre</td>
+                            <td>@obj_Distribucion.estado</td>
+                            <td>@obj_Distribucion.fecha_impresion</td>
+                            <td>@obj_Distribucion.monto</td>
+                            <td>@obj_Distribucion.monto_subejecutado</td>
+                            <td>@obj_Distribucion.monto_subejecutado</td>
+
+                        </tr>
+                           }
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!--
+                <div class="btn-group" role="group" aria-label="Basic example" style="float:right">
+                    <button type="button" class="btn btn-outline-primary btn-lg">Cancelar</button>
+                    <button type="button" class="btn btn-outline-primary btn-lg">Aceptar</button>
+                </div>-->
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+</body>
+</html>
+

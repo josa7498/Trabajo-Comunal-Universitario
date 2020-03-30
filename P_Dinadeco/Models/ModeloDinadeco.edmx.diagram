@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3ab08e2b2f6149d3bb19efd1c3d49891" Name="Diagram1">
+        <EntityTypeShape EntityType="DINADECO_BDModel.Acuerdo" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Asociacion" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Canton" Width="1.5" PointX="6" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Distrito" Width="1.5" PointX="8.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dna_bitacora" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dna_bitacora_imprimibles" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_deposito" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_dist_aprobacion" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_dist_asignacion" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_dist_exclusion" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_dist_inclusion" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_distribucion" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_institucionesfinancieras" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_liquidacion" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_proy_aprobacion" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_proy_cambioestado" Width="1.5" PointX="7.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_proyecto" Width="1.5" PointX="12.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_subtipoproyecto" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.dnf_tipoproyecto" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Estado" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.EstadoAsociacion" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Miembro" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Provincia" Width="1.5" PointX="3.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Puesto" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Region" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.Regional" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.TipoAcuerdo" Width="1.5" PointX="6" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DINADECO_BDModel.TipoAsociacion" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaAcuerdo_referenciaAsociacion" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaAcuerdo_referenciaRegional" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaAcuerdo_referenciaTipoAcuerdo" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaAsociacion_referenciaMiembro" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaEstado_referenciaAsociacion" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaProvincia_referenciaAsociacion" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaRegion_referenciaAsociacion" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaTipoAsociacion_referenciaAsociacion" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.FK__Canton__idProvin__26CFC035" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.FK__Distrito__29AC2CE0" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaEstado_referenciaMiembro" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaRegion_referenciaEstado" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaRegional_referenciaEstado" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaPuesto_referenciaMiembro" ManuallyRouted="false" />
+        <AssociationConnector Association="DINADECO_BDModel.referenciaProvincia_referenciaRegional" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
